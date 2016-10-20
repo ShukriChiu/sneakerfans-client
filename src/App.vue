@@ -24,13 +24,13 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js'
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -41,7 +41,7 @@ export default {
 }
 
 h1, h2 {
-  font-weight: normal;
+  font-weight: 1.2em;
 }
 
 ul {
