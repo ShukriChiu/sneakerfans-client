@@ -3,9 +3,7 @@ var express = require('express'),
     app = express();
 
 app = express();
-app.use('/dist', express.static('dist'));
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/views/index.html'));
-});
+app.set('view engine', 'html');
+app.use('/', express.static(path.join(__dirname, 'public')));
 var port = process.env.PORT || 3000;
 app.listen(port, console.log('server started:' + port));
