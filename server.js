@@ -4,7 +4,7 @@ var express = require('express'),
     history = require('connect-history-api-fallback');
 
 app = express();
-app.user(history())
+app.use(history())
 app.set('view engine', 'html');
 app.use('/', express.static(path.join(__dirname, 'public')));
 var port = process.env.PORT || 3000;
